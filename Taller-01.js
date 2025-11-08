@@ -8,12 +8,6 @@ function Fah(c){
     return result
 }
 
-
-
-
-console.log(con)
-
-
 function cuadratica(a,b,c, h ){
     div = 2 * a
     positive = -b + Math.sqrt(b**2 - 4 * a * c)
@@ -27,7 +21,7 @@ function cuadratica(a,b,c, h ){
     }
 }
 
-console.log(cuadratica(1,5,4,true))
+
 
 
 function Mparidad(Num){
@@ -39,7 +33,7 @@ function Mparidad(Num){
     return x
 }
 
-console.log(Mparidad(1))
+
 
 
 function Pparidad(num){
@@ -66,6 +60,13 @@ function Pparidad(num){
     }else if(num === 10){
         console.log("Numero es par")
     }
+    return "Numero fuera de rango (0-10)"
 }
 
-console.log(Pparidad(9))
+// Exportamos las 4 funciones
+module.exports = {
+    Fah,
+    cuadratica,
+    Mparidad,
+    Pparidad
+};

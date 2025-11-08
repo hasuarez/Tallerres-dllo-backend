@@ -8,7 +8,7 @@ function findMax(arr){
 }
  return max
 }
-console.log(findMax([3, 17, -1, 4, -19]))
+
 
 function includes(arr, num){
     let esta = false
@@ -20,7 +20,7 @@ function includes(arr, num){
     return esta
 }
 
-console.log(includes([3, 17, -1, 4, -19], 4))
+
 
 function sum(arr){
     let sum = 0
@@ -30,7 +30,7 @@ function sum(arr){
     return sum
 }
 
-console.log(sum([3, 17, -1, 4, -19]))
+
 
 function missingNumbers(arr){
 let max = arr[0]
@@ -68,6 +68,10 @@ let indice = 0
     }
     return falt
 }
-
-console.log(missingNumbers([2,3,4,6,7,9]))
-
+// Exportamos las 4 funciones
+module.exports = {
+    findMax,
+    includes,
+    sum,
+    missingNumbers
+};

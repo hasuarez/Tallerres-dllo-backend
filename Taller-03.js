@@ -31,7 +31,6 @@ function desglosarString(str, Letra) {
   }
 }
 
-console.log(desglosarString("hola mundo", "vocales"))
 
 function twoSum(arr, num){
     resultado = []
@@ -48,7 +47,7 @@ function twoSum(arr, num){
     return resultado
 }
 
-console.log(twoSum([2,7,11,15], 9))
+
 
 
   function conversionRomana(str) {
@@ -80,7 +79,7 @@ console.log(twoSum([2,7,11,15], 9))
   return arr.reduce(find, 0);
 
 }  
-console.log(conversionRomana("mmxxiv"))
+
 
 function descomposicion(str) {
   const [target, ...dic] = str.split(",").map(s => s.trim())
@@ -103,7 +102,13 @@ function descomposicion(str) {
 }
 
 
-console.log(descomposicion("malhumor,mala,hum,humor,mala,mal,malhu,umor")) 
+// Exportamos todas las funciones
+module.exports = {
+    desglosarString,
+    twoSum,
+    conversionRomana,
+    descomposicion
+};
 
 
 
